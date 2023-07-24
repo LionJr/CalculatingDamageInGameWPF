@@ -43,7 +43,6 @@ class SwordDamage
     decimal magicMultiplier = 1M;
     if(Magic) magicMultiplier = 1.75M;
 
-    Damage = BASE_DAMAGE;
     Damage = (int)(Roll * magicMultiplier) + BASE_DAMAGE;
     if(Flaming) Damage += FLAME_DAMAGE;
   }
